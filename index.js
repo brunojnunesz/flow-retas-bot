@@ -61,7 +61,7 @@ ${message.content || "_(sem texto)_"}
 })
 
 // Reações automáticas
-const reactions = ["🔥", "✅", "📊"]
+const reactions = ["☝🏻", "🎢", "📈"]
 
 for (const emoji of reactions) {
   await sentMessage.react(emoji)
