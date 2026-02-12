@@ -55,10 +55,18 @@ client.on("messageCreate", async (message) => {
 ${message.content || "_(sem texto)_"}
     `
 
-    await targetChannel.send({
-      content,
-      files: [...message.attachments.values()]
-    })
+    const sentMessage = await targetChannel.send({
+  content,
+  files: [...message.attachments.values()]
+})
+
+// Reações automáticas
+const reactions = ["🔥", "✅", "📊"]
+
+for (const emoji of reactions) {
+  await sentMessage.react(emoji)
+}
+
 
   } catch (err) {
     console.error("Erro ao encaminhar mensagem:", err)
