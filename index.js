@@ -18,12 +18,17 @@ const FORWARD_RULES = [
   },
   {
     sourceGuildId: "1436351514670006294",
-    sourceChannelId: "1446509277735813260",
+    sourceChannelId: "1517006135939567616",
     targetChannelId: "1470086748603154473"
   },
   {
     sourceGuildId: "312329159105970176",
     sourceChannelId: "335148706049294336",
+    targetChannelId: "1470086748603154473"
+  },
+  {
+    sourceGuildId: "1492224991490478112",
+    sourceChannelId: "1529627321986977943",
     targetChannelId: "1470086748603154473"
   }
 ]
